@@ -1,0 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.max-w{
+  @apply max-w-screen-xl mx-auto px-4;
+}
