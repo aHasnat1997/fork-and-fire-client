@@ -13,7 +13,7 @@ const NavBar = () => {
 
   return (
     <nav>
-      <div className="navbar max-w">
+      <div className="navbar md:px-8">
         <div className="navbar-start">
           <div className="dropdown">
             <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -25,8 +25,8 @@ const NavBar = () => {
               }
             </ul>
           </div>
-          <Link to='/' className="text-4xl flex items-center font-extrabold">
-            <img className='w-8' src={logo} alt="logo" />
+          <Link to='/' className="text-2xl md:text-4xl flex items-center font-extrabold">
+            <img className='w-6 md:w-8' src={logo} alt="logo" />
             <span>
               Fork<span className='text-primary'>&</span>Fire
             </span>
