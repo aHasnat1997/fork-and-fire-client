@@ -15,7 +15,7 @@ const MenuSection = () => {
   return (
     <section className='max-w my-16 w-full '>
       <SectionTitle heading={'FROM OUR MENU'} subHeading={'Check it out'} />
-      <div className='my-8 grid grid-cols-2 gap-8'>
+      <div className='my-8 grid md:grid-cols-2 gap-8'>
         {
           menus.slice(0, 6).map(menu => <MenuCard key={menu._id} menuItem={menu} />)
         }

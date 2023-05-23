@@ -7,10 +7,10 @@ import SectionTitle from '../../../components/SectionTitle';
 const Featured = () => {
   return (
     <section className='featuredBG my-16 text-white py-16'>
-      {/* <div className='featuredBG  fixed z-30'></div> */}
+      {/* <div className='featuredBG'></div> */}
       <SectionTitle heading={'OUR Featured'} subHeading={'Check it out'} />
-      <div className='max-w mt-10 flex gap-16'>
-        <img className='w-1/2' src={image} alt="Image" />
+      <div className='max-w mt-10 flex flex-col md:flex-row gap-16 '>
+        <img className='md:w-1/2 rounded-2xl' src={image} alt="Image" />
         <div className="">
           <h4 className='text-2xl'>March 20, 2023</h4>
           <h2 className='text-4xl my-4'>WHERE CAN I GET SOME?</h2>

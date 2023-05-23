@@ -13,17 +13,16 @@ import img4 from '../../assets/home/slide4.jpg';
 
 const OnlineOrder = () => {
   return (
-    <section className='max-w my-8'>
+    <section className='max-w w-full my-8'>
       <SectionTitle heading={'Order Online'} subHeading={'From 11:00am to 10:00pm'} />
-      <div className='w-3/4 mx-auto mt-8'>
+      <div className='md:w-3/4 mx-auto mt-8'>
         <Swiper
-          slidesPerView={1}
           spaceBetween={15}
           pagination={{
             clickable: true,
           }}
           breakpoints={{
-            640: {
+            200: {
               slidesPerView: 1,
             },
             768: {
