@@ -1,0 +1,7 @@
+.mySwiper .swiper-slide {
+  padding: 5px;
+}
+
+.mySwiper .swiper-slide-thumb-active {
+  border: 2px solid black;
+}

@@ -1,0 +1,6 @@
+.bioBG{
+  width: 100%;
+  background: url('../../../assets/home/chef-service.jpg') no-repeat;
+  background-position: center;
+  background-size: cover;
+}

@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
-.max-w{
+.max-w {
   @apply max-w-screen-xl mx-auto px-4;
+}
+
+.my-btn{
+  @apply btn btn-outline border-0 border-b-4;
 }
