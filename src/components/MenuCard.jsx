@@ -5,7 +5,12 @@ const MenuCard = ({ menuItem }) => {
 
   return (
     <div className='w-full flex flex-col lg:flex-row gap-4'>
-      <div className='overflow-hidden rounded-t-none rounded-s-full rounded-e-full rounded-r-full'>
+      <div
+        style={{
+          borderRadius: '10% 100% 100% 100%',
+          overflow: 'hidden'
+        }}
+      >
         <img className='lg:h-[10rem] duration-1000 hover:scale-150' src={image} alt="product image" />
       </div>
       <div className='w-full flex justify-between'>
