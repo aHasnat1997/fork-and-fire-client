@@ -4,9 +4,21 @@ import { Link, NavLink } from 'react-router-dom';
 
 const NavBar = () => {
   const menuItems = <>
-    <li className='hover:text-primary'><NavLink to='/'>Home</NavLink></li>
-    <li className='hover:text-primary'><NavLink to='/menu'>Our Menu</NavLink></li>
-    <li className='hover:text-primary'><NavLink>Contact us</NavLink></li>
+    <li className='hover:text-primary'><NavLink to='/'
+      className={({ isActive }) => isActive ? 'text-primary' : ''}
+    >
+      Home
+    </NavLink></li>
+    <li className='hover:text-primary'><NavLink to='/menu'
+      className={({ isActive }) => isActive ? 'text-primary' : ''}
+    >
+      Our Menu
+    </NavLink></li>
+    <li className='hover:text-primary'><NavLink to='/shop'
+      className={({ isActive }) => isActive ? 'text-primary' : ''}
+    >
+      Our Shop
+    </NavLink></li>
   </>;
 
 
