@@ -3,7 +3,7 @@ import './Bio.css'
 
 const Bio = () => {
   return (
-    <section className='bioBG max-w my-16'>
+    <section className='bioBG max-w my-16 rounded-2xl'>
       <div className='md:mx-20 my-8 md:my-16 p-8 md:px-10 md:py-8 text-center bg-white bg-opacity-80 rounded-xl'>
         <h2 className='text-2xl md:text-6xl font-bold mb-4'>
           Fork <span className='text-primary font-extrabold'>&</span> Fire
