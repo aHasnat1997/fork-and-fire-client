@@ -5,6 +5,7 @@ import MenuLayout from "../pages/Menu/MenuLayout";
 import ShopLayout from "../pages/Shop/ShopLayout";
 import Login from "../pages/AuthenticationPages/Login";
 import Register from "../pages/AuthenticationPages/Register";
+import DashboardLayout from "../userDashboard/DashboardLayout";
 
 export const router = createBrowserRouter([
   {
@@ -24,6 +25,10 @@ export const router = createBrowserRouter([
         element: <ShopLayout />
       }
     ],
+  },
+  {
+    path: '/user-dashboard',
+    element: <DashboardLayout />
   },
   {
     path: '/login',
