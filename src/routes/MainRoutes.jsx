@@ -6,6 +6,12 @@ import ShopLayout from "../pages/Shop/ShopLayout";
 import Login from "../pages/AuthenticationPages/Login";
 import Register from "../pages/AuthenticationPages/Register";
 import DashboardLayout from "../userDashboard/DashboardLayout";
+import UserProfile from "../userDashboard/UserProfile";
+import MyCart from "../userDashboard/MyCart";
+import Reservation from "../userDashboard/Reservation";
+import PaymentHistory from "../userDashboard/PaymentHistory";
+import AddReview from "../userDashboard/AddReview";
+import MyBooking from "../userDashboard/MyBooking";
 
 export const router = createBrowserRouter([
   {
@@ -28,7 +34,33 @@ export const router = createBrowserRouter([
   },
   {
     path: '/user-dashboard',
-    element: <DashboardLayout />
+    element: <DashboardLayout />,
+    children: [
+      {
+        path: 'user',
+        element: <UserProfile />
+      },
+      {
+        path: 'reservation',
+        element: <Reservation />
+      },
+      {
+        path: 'payment',
+        element: <PaymentHistory />
+      },
+      {
+        path: 'cart',
+        element: <MyCart />
+      },
+      {
+        path: 'review',
+        element: <AddReview />
+      },
+      {
+        path: 'booking',
+        element: <MyBooking />
+      }
+    ]
   },
   {
     path: '/login',
